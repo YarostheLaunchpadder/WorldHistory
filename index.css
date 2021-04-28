@@ -1,0 +1,43 @@
+@keyframes leftfade {
+    0%   {left:-500px; top:0px; opacity: 0%;}
+    100% {left:0px; top:0px; opacity: 100%;}
+  }
+
+.title {
+    position: relative;
+    animation-name: leftfade;
+    animation-duration: 2s;
+    font-size: 50px;
+}
+
+
+p, h1, h2, h3, h4, h5, h6, div, a, img {
+    font-family: 'Segoe UI Light';
+    position: relative;
+    position: relative;
+    animation-name: leftfade;
+    animation-name: leftfade;
+    animation-duration: 1s;
+
+  }
+
+a {
+text-decoration: none;
+}
+
+a:link, a:visited {
+  color: black;
+}
+
+ul li a{
+  margin-right: 20px;
+}
+
+.contents-rect {
+  background: #AAAAAA;
+  white-space: pre-wrap;
+  text-align: center;
+  height: 400px;
+  width: 800px;
+  line-height: 40px; 
+}

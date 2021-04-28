@@ -1,0 +1,112 @@
+<!doctype html>
+<html>
+<head>
+	<title>World History - Imperialism</title>
+	<meta name="description" content="Interactive infographic on imperialism by Yaros">
+	<meta name="author" content="Yaros">
+    <link rel="stylesheet" href="imperialism.css">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='imperialism.css') }}">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Raleway:400,500,500i,700,800i" rel="stylesheet">
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+	<script type="text/javascript">
+	$(document).ready(function () {
+	$('.navbar-light .dmenu').hover(function () {
+			$(this).find('.sm-menu').first().stop(true, true).slideDown(150);
+		}, function () {
+			$(this).find('.sm-menu').first().stop(true, true).slideUp(105)
+		});
+	});
+    </script>
+    
+    <nav class="navbar navbar-expand-sm   navbar-light bg-light">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+            <img src="https://www.flaticon.com/svg/static/icons/svg/814/814513.svg" style="width: 50px; margin-right: 30px;">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="industrial-revolution.html">Industrial Revolution</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="imperialism.html">Imperialism</a>
+            <li class="nav-item">
+                <a class="nav-link" href="worldwar1.html">World War I</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="russianrevolution.html">Russian Revolution</a>
+            </li>
+			<li class="nav-item">
+                <a class="nav-link" href="thegreatdepression.html">The Great Depression & Fascism</a>
+            </li>
+            </ul>
+
+        </div>
+        </nav>
+    
+</head>
+<body>
+    <script type="text/javascript" src="script.js"></script>
+
+    <center>
+    <h1 class="title">Imperialism</h1>
+    <h2 style="margin-left: 10px; margin-right: 10px;">Imperialism happens when a stronger nation takes a weaker nation and dominates its religion, cultures.</h2>
+    
+    <div style="margin: 30px;">
+        <button type="button" class="collapsible">What are the causes of Imperialism?</button>
+        <div class="content">
+        <p>Imperialism happens because people want to expand their land and have more people under control, also they needed materials to work and expand. There are five main imperialism causes: Economic, Exploratory, Ethnocentric, and Religious.</p>
+        </div>
+
+        <button type="button" class="collapsible">When did Imperialism start?</button>
+        <div class="content">
+        <p>Imperialism was first practiced by European and Japanese nations in the 1800s and early 1900s. In any case he stronger nation would experience industrialization prior to practicing imperialism on a foreign nation or region.</p>
+        </div>
+
+        <button type="button" class="collapsible">Where did it happen?</button>
+        <div class="content">
+        <p>Imperialism mostly happened in Africa and Asia but also in Europe. These are the countries that experienced Imperialism: England, France, Netherlands, Spain, Portugal, Russia, The U.S., Germany, Italy, Japan, Belgium and Turkey</p>
+        </div>
+
+        <button type="button" class="collapsible">Is Imperialism still happening today?</button>
+        <div class="content">
+        <p>Imperialism, especially American, can be still seen all over the world nowadays, despite the Age of Imperialism having ended in 1914!</p>
+        </div>
+    </div>
+
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/China_imperialism_cartoon.jpg/640px-China_imperialism_cartoon.jpg" class="inline-images">
+    <img src="https://images.fineartamerica.com/images-medium-large-5/1-imperialism-cartoon-1882-granger.jpg" class="inline-images">
+    <img src="https://urpe.org/wp-content/uploads/2017/12/images-duckduckgo-com5.jpg?w=289" class="inline-images">
+    
+    
+
+    </center>
+    <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+
+        for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.maxHeight){
+            content.style.maxHeight = null;
+            } else {
+            content.style.maxHeight = content.scrollHeight + "px";
+            } 
+        });
+        }
+        </script>
+        
+</body>
+</html>

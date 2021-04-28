@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+html {
+    height: 100%;
+}
+
+
+.title {
+    position: relative;
+}
+
+
+p, h1, h2, h3, h4, h5, h6, div, a, img {
+    font-family: 'Segoe UI Light';
+    position: relative;
+    position: relative;
+
+  }
+
+.collapsible {
+    background-color: rgba(94, 126, 242, 0.753);
+    color: rgb(255, 255, 255);
+    font-family: 'Segoe UI Light';
+    cursor: pointer;
+    padding: 18px;
+    width: 50%;
+    border: none;
+    text-align: left;
+    outline: none;
+    position: relative;
+    font-size: 15px;
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+
+.inline-images {
+	display: inline-block;
+	margin: 10px;
+	margin-bottom: 30px;
+	height: 300px;
+
+}
+  
+.content {
+    padding: 0 18px;
+    max-height: 0;
+    width: 46%;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color: rgba(255, 255, 255, 0.5);
+  }
